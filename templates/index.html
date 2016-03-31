@@ -1,0 +1,21 @@
+<div id="collectionsContainer">
+	<div class="collections">
+		<div class="title">My Peeps
+			<a href="/newContact"><i id="plus" class="fa fa-plus fa-lg"></i></a>
+		</div>
+		<div id="contacts">
+			{{#contactsData}}
+				<a href="/contact/{{objectId}}">
+					<div id="contactButtons" type="submit">
+						<img class="image" src="{{image}}">
+							<span class="buttonText">{{fname}}&nbsp{{lname}}</span>
+						</img>
+					</div>
+				</a>	
+		  	{{/contactsData}}
+		</div>
+	</div>
+<!-- 
+	<div id="showContact"></div>
+	<a href="/contact/Er0GV3HPAc">Contact</a> -->
+</div>
